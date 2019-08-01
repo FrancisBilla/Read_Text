@@ -29,7 +29,7 @@ public class Readd{
             while ((line=br.readLine()) !=null){
                 for (String word: line.split("")){
                     if (word.length()>5)
-                        count = count + 1;
+                        count = count++;
                 }
             }
         } catch (IOException e) {
