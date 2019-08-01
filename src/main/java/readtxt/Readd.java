@@ -21,7 +21,7 @@ public class Readd{
 
 
         public int countWordLongerThanFive(){
-        int count = 0;
+        int wordCount = 0;
             Path south;
             south = Paths.get("src/main/resources/south.txt");
         try (BufferedReader br = Files.newBufferedReader(south,StandardCharsets.UTF_8)){
@@ -35,7 +35,7 @@ public class Readd{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return count;
+        return wordCount;
 
 
         }
